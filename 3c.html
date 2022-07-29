@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+var no_of_tickets;
+const ticket_cost=150;
+document.write("<h2 style='color:blue'>");
+no_of_tickets=parseInt(window.prompt("Enter no.of tickets:"));
+document.write("No.of tickets:"+no_of_tickets);
+document.write("</h2>");
+document.write("<h2 style='color:red'>");
+var tic_cost;
+tic_cost=no_of_tickets*ticket_cost;
+var ticket_discount=tic_cost*0.1;
+document.write("Discount obtained:"+ticket_discount);
+document.write("</h2>");
+document.write("<h2 style='color:green'>");
+var total_cost=tic_cost-ticket_discount;
+document.write("Total cost:"+total_cost);
+document.write("</h2>");
+</script>
+</head>
+</html>

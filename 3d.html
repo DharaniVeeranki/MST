@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+var no_of_tickets;
+const ticket_cost=150;
+no_of_tickets=window.prompt("Enter no.of tickets:");
+document.write("<h2 style='color:red'>");
+document.write("No.of tickets are:"+no_of_tickets);
+document.write("</h2>");
+document.write("<br>");
+if(no_of_tickets>=6 && no_of_tickets<=0)
+{
+document.write("<h2 style='color:red'>");
+alert("Not possible");
+document.write("</h2>");
+document.write("<br>");
+}
+else if(no_of_tickets>=1 && no_of_tickets<=2)
+{
+var total_cost=no_of_tickets*ticket_cost;
+document.write("<h2 style='color:green'>");
+document.write("Cost will be:"+total_cost);
+document.write("</h2>");
+document.write("<br>");
+}
+else
+{
+total_cost=no_of_tickets*ticket_cost;
+discount=total_cost*0.05; //5% discount
+document.write("<h2 style='color:red'>");
+document.write("obtained discount:"+discount);
+document.write("</h2>");
+document.write("<br>");
+movie_cost=total_cost-discount;
+document.write("<h2 style='color:green'>");
+document.write("Ticket cost will be:"+movie_cost);
+document.write("</h2>");
+}
+</script>
+</head>
+</html>
