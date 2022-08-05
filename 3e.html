@@ -1,0 +1,41 @@
+<html>
+<head>
+<script language="javascript">
+	var no_of_tickets,total_cost,discount,amount,i;
+	var total_amount=0;
+	const ticket_cost=150;
+	time=parseInt(window.prompt("Enter no.of times of booking","1"));
+	for(i=1;i<=time;i++){
+			no_of_tickets=parseInt(window.prompt("Enter No.of tickets","0"));
+			if(no_of_tickets>=6 || no_of_tickets<=0)
+				alert("Booking is not possible");
+			else if(no_of_tickets>=1 && no_of_tickets<=2){
+				total_cost=ticket_cost*no_of_tickets;
+				total_amount=total_amount+total_cost;
+				document.write("<table border='2' ><tr><th style='color: red;'>TotalCost:</th><th style='color: blue;'>");
+				document.write(total_cost);
+				document.write("</th></tr></table>");
+			}
+			else{
+				total_cost=ticket_cost*no_of_tickets;
+				discount=total_cost*0.05;
+				amount=total_cost-discount;
+				total_amount=total_amount+amount;
+				document.write("<table border='2'><tr><th style='color:blue;'>TotalCost:</th><th style='color:green;'>");
+				document.write(total_cost);
+				document.write("</th></tr>");
+				document.write("<tr><th style='color:blue;'>Discount:</th><th style='color:green;'>");
+				document.write(discount);
+				document.write("</th></tr>");
+				document.write("<tr><th style='color:blue;'>Amount to be paid:</th><th style='color:green;'>");	
+				document.write(amount);
+				document.write("</th></tr></table>");
+			}
+
+		}
+		document.write("<h2 style='color:red;'>");
+		document.write("Total Amount to be paid:"+total_amount);
+		document.write("</h2>");
+</script>
+</head>
+</html>
