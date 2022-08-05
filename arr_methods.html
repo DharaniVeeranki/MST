@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+names=new Array();
+n=parseInt(window.prompt("Enter no.of elements:","1"));
+for(i=0;i<n;i++){
+	names[i]=window.prompt("Enter elements");
+}
+document.write("the array elements are:");
+for(i=0;i<n;i++){
+	document.write(names[i]+" ");
+	document.write("<br>");
+}
+document.write("sorted elements are:"); 
+document.write(names.sort()); 
+document.write("<br>");
+m=parseInt(window.prompt("enter the number to push"));
+//document.write(
+names.push(m);
+document.write("<br>");
+document.write("after pushing the elements are:"); 
+document.write(names);
+</script>
+</head>
+</html>
