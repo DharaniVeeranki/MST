@@ -1,0 +1,36 @@
+<html>
+<script>
+days=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+var d=new Date();
+document.write("<font color='purple'>");
+document.write("Date"+d);
+document.write("</font>");
+document.write("<br>");
+document.write("<font color='red'>");
+var day=d.getDay();
+document.write("Day is:"+day+"-"+days[day]);
+document.write("<br>");
+var mon=d.getMonth();
+document.write("Month is:"+mon);
+document.write("<br>");
+var year=d.getFullYear();
+document.write("Year is:"+year);
+document.write("<br>");
+var hou=d.getHours();
+document.write("Hours:"+hou);
+document.write("<br>");
+var time=d.getTime();
+document.write("time:"+time);
+document.write("<br>");
+var min=d.getMinutes();
+document.write("Minutes:"+min);
+document.write("<br>");
+var sec=d.getSeconds();
+document.write("seconds:"+sec);
+document.write("<br>");
+var ms=d.getMilliseconds();
+document.write("miliseconds:"+ms);
+document.write("<br>")
+document.write("</font>");
+</script>
+</html>
