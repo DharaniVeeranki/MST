@@ -1,0 +1,30 @@
+<html>
+<body>
+<h2 id="demo"></h2>
+<h2 id="demo1"></h2>
+<h2 id="demo2"></h2>
+<h2 id="demo3"></h2>
+</body>
+<script>
+function f1()
+{
+document.getElementById("demo").innerHTML="function-1";
+}
+function f2()
+{
+document.getElementById("demo1").innerHTML="function-2";
+}
+function f3(x,y)
+{
+document.getElementById("demo2").innerHTML=x+y;
+}
+function f4()
+{
+document.getElementById("demo3").innerHTML="function-4";
+}
+f1();
+setTimeout(f2,2000);
+setTimeout(f3,1000,3,4);
+f4();
+</script>
+</html>

@@ -1,0 +1,12 @@
+<html>
+<body>
+<h2 id="demo"></h2>
+</body>
+<script>
+setInterval(f1,1000);
+function f1(){
+let d=new Date();
+document.getElementById("demo").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+":"+d.getMilliseconds();
+}
+</script>
+</html>
