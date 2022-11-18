@@ -1,6 +1,7 @@
 const express=require ('express');
 const app=express();
 const mongoose=require('mongoose');
+//localhost :- 127.0.0.1
 mongoose.connect("mongodb://localhost:27017/CSE_C",(err)=>{
 	if(err)
 		console.log("DB error");
